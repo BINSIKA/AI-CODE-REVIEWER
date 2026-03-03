@@ -25,3 +25,18 @@ This project is a Python utility that validates Python source code using Pythonâ
 If parsing fails:
 
           Returns a clear syntax error message with location information
+
+**Milestone 2 â€“ Error & Bug Detection**
+
+**Code Parser (code_parser.py):** Acts as a scanner to convert code strings into an Abstract Syntax Tree (AST). It validates syntax and prepares the code  for analysis.
+
+**Error Detector (error_detector.py):** Uses an ast.NodeVisitor to "walk" through the tree and identify logical errors. It tracks ast.Store  and ast.Load 
+to find unused variables or imports.
+
+**AI Suggester (ai_suggester.py):** Uses the GPT API to provide intelligent explanations for errors. It suggests optimizations for time and space complexity and encourages better coding style.
+
+**Key Outcomes**
+  Identify syntax and logical errors automatically.
+  Detect unused variables by comparing definitions against usages.
+  Provide instant, human-like feedback on code performance and style.
+
