@@ -1,7 +1,7 @@
 import reflex as rx
 
 config = rx.Config(
-    app_name="ai_code_reviewer",
-    api_url="http://localhost:5000"  
-    
+    app_name="ai_reviewer_app",
+    db_url="sqlite:///reflex.db",
+    env=rx.Env.DEV,
 )
